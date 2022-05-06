@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estudando.css">
+</head>
+<body>
+    <form >
+    <div>
+        <div>
+<input class="inputs" id="carro_1" onkeyup="palavra()" maxlength="1">
+<input class="inputs" id="carro_2" onkeyup="palavra()" maxlength="1">
+<input id="carro_3" onkeyup="palavra()" maxlength="1">
+<input id="carro_4" onkeyup="palavra()" maxlength="1">
+<input id="carro_5" onkeyup="palavra()" maxlength="1"> <br>
+</div>
+<div class="roda">
+<input id="roda_1" onkeyup="palavra()" maxlength="1"><br>
+<input id="roda_2" onkeyup="palavra()" maxlength="1"><br>
+<input id="roda_3" onkeyup="palavra()" 
+maxlength="1">
+<input id="amigo_1" onkeyup="palavra()" maxlength="1">
+<input id="amigo_2" onkeyup="palavra()" maxlength="1">
+<input id="amigo_3" onkeyup="palavra()" maxlength="1">
+<input id="amigo_4" onkeyup="palavra()" maxlength="1">
+
+
+
+<br>
+
+
+</div>
+    </div>
+    <button>Limpar</button>
+</form>
+
+</body>
+</html>
+
+<script>
+
+function palavra(){
+var C1= carro_1.value
+var C2= carro_2.value
+var C3= carro_3.value
+var C4= carro_4.value
+var C5= carro_5.value
+var R1= roda_1.value
+var R2= roda_2.value
+var R3= roda_3.value
+var A1= amigo_1.value
+var A2= amigo_2.value
+var A3= amigo_3.value
+var A4= amigo_4.value
+if(C1=="c" && C2=="a" && C3=="r" && C4=="r"&& C5=="o" ){
+    
+    carro_1.style.border= "2px solid green"
+    carro_2.style.border= "2px solid green"
+    carro_3.style.border= "2px solid green"
+    carro_4.style.border= "2px solid green"
+    carro_5.style.border= "2px solid green"
+} else{
+    carro_1.style.border= "2px solid red"
+    carro_2.style.border= "2px solid red"
+    carro_3.style.border= "2px solid red"
+    carro_4.style.border= "2px solid red"
+    carro_5.style.border= "2px solid red"
+
+}
+
+if(C3=="r" && R1=="o" && R2=="d" && R3=="a"){
+    roda_1.style.border= "2px solid green"
+    roda_2.style.border= "2px solid green"
+    carro_3.style.border= "2px solid green"
+    roda_3.style.border= "2px solid green"
+
+
+
+} else{
+    roda_1.style.border= "2px solid red"
+    roda_2.style.border= "2px solid red"
+    carro_3.style.border= "2px solid red"
+    roda_3.style.border= "2px solid red"
+
+}
+
+if(R3=="a" && A1=="m" && A2=="i" && A3=="g" && A4=="o"){
+    amigo_1.style.border= "2px solid green"
+    amigo_2.style.border= "2px solid green"
+    amigo_3.style.border= "2px solid green"
+    roda_3.style.border= "2px solid green"
+    amigo_4.style.border= "2px solid green"
+    
+} else{
+    
+    amigo_1.style.border= "2px solid red"
+    amigo_2.style.border= "2px solid red"
+    amigo_3.style.border= "2px solid red"
+    roda_3.style.border= "2px solid red"
+    amigo_4.style.border= "2px solid red"
+
+    
+
+}
+
+
+
+}
+
+
+
+</script>
